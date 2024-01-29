@@ -3,9 +3,6 @@ const botones = document.querySelectorAll(".btn");
 
 document.addEventListener("keydown", function (event) {
   const key = event.key;
-  if (event.key == "Backspace") {
-    console.log("sirvent");
-  }
   if (
     (key >= "0" && key <= "9") ||
     key === "+" ||
@@ -42,9 +39,6 @@ document.addEventListener("keydown", function (event) {
 botones.forEach((boton) => {
   boton.addEventListener("click", () => {
     const botonApretado = boton.textContent;
-    console.log("sirve");
-    console.log(boton);
-
     if (boton.id === "c") {
       pantalla.textContent = "0";
       return;
